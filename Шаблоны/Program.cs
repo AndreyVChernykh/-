@@ -8,10 +8,14 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            Car auto = new Car(4, "Volvo", new PetrolMove());
+            var petrol = new Petrol();
+            var electric = new Electric();
+            Car auto = new Car(4, "Volvo", petrol);
             auto.Move();
-            auto.Movable = new ElectricMove();
+            petrol.Filling();
+            auto.Movable = electric;
             auto.Move();
+            electric.Filling();
 
             Console.ReadLine();
         }

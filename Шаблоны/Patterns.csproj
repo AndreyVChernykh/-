@@ -45,8 +45,9 @@
   <ItemGroup>
     <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Models\Car.cs" />
-    <Compile Include="MoveTypes\ElectricMove.cs" />
-    <Compile Include="MoveTypes\PetrolMove.cs" />
+    <Compile Include="Models\Refill.cs" />
+    <Compile Include="Types\Electric.cs" />
+    <Compile Include="Types\Petrol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
